@@ -1,0 +1,27 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "express js restful api testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "npx nodemon app.js",
+    "test": "jest --testTimeout=10000 --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^7.0.3",
+    "jest": "^27.0.4",
+    "superagent": "^6.1.0",
+    "supertest": "^6.1.3"
+  }
+}
