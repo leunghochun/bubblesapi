@@ -4,7 +4,7 @@
   "description": "express js restful api testing",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "devStart": "npx nodemon app.js",
     "test": "jest --testTimeout=10000 --forceExit"
   },

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-08 16:52:42
- * @LastEditTime: 2021-06-08 18:25:30
+ * @LastEditTime: 2021-06-15 16:12:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /myapi/server.js
@@ -17,7 +17,7 @@
 
 const express = require("express");
 const cors = require("cors");
-const routes = require("./Routes/bubbles.routes");
+// const routes = require("./Routes/bubbles.routes");
 
 function createServer() {
 	const app = express();
