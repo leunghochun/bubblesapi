@@ -3,6 +3,8 @@ application:
   name: "bubblesapi"
   project: "bubbles-api"
   organization: "QoveryCommunity"
+  publicly_accessible: true
+  port: 8080
 routers:
 - name: "main-bubblesapi"
   routes:
