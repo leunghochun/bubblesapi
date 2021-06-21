@@ -1,15 +1,15 @@
 /*
- * @Author: your name
+ * @Author: joe leung
  * @Date: 2021-06-08 16:21:22
- * @LastEditTime: 2021-06-15 14:51:58
+ * @LastEditTime: 2021-06-16 12:57:55
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /myapi/__tests__/sample.test.js
+ * @Description: unit test for bubbles modal on (CRUD)
+ * @FilePath: /myapi/__tests__/bubbles.test.js
  */
 const supertest = require('supertest');
 const app = require('../server.test');
 const mongoose = require("mongoose");
-const db = require('../Models/');
+const db = require('../Models');
 const Bubbles = db.bubbles;
 
 // testing data

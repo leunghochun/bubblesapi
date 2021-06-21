@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "devStart": "npx nodemon app.js",
-    "test": "jest --testTimeout=10000 --forceExit"
+    "test": "jest --testTimeout=10000 --forceExit --runInBand"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.9",
+    "mongodb-memory-server": "^6.9.6",
     "mongoose": "^5.12.13"
   },
   "devDependencies": {

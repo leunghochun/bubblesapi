@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-08 16:52:42
- * @LastEditTime: 2021-06-15 16:12:55
+ * @LastEditTime: 2021-06-17 14:53:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /myapi/server.js
@@ -27,9 +27,11 @@ function createServer() {
   // parse requests of content-type - application/json
   app.use(express.json());
   // parse requests of content-type - application/x-www-form-urlencoded
-  app.use(express.urlencoded({ extended: true }))
+  app.use(express.urlencoded({ extended: true }));
 
-  require("./Routes/bubbles.routes")(app)
+  require("./Routes/bubbles.routes")(app);
+  require("./Routes/users.routes")(app)
+  require("./Routes/messages.routes")(app)
 
 	return app;
 }

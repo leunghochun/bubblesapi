@@ -1,9 +1,9 @@
 /*
- * @Author: your name
+ * @Author: joe leung
  * @Date: 2021-06-08 10:04:27
- * @LastEditTime: 2021-06-15 14:50:58
+ * @LastEditTime: 2021-06-17 17:46:25
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @Description: Controller to handle all processes between api & database bubbles
  * @FilePath: /myapi/Contollers/bubbles.controller.js
  */
 
@@ -11,7 +11,7 @@ const db = require('../Models');
 const Bubbles = db.bubbles;
 const ObjectId = require('mongodb').ObjectID;
 
-// Create and Save a new Bubbles
+// Create and Save a new Bubble
 exports.create = (req, res) => {
     if (!req.body.id) {
         res.status(400).send({ message: "id can not be empty!" });
@@ -149,9 +149,4 @@ exports.deleteAll = (req, res) => {
           err.message || "Some error occurred while removing all bubbles."
       });
     });
-};
-
-// Find all published Bubbles
-exports.findAllPublished = (req, res) => {
-  
 };
